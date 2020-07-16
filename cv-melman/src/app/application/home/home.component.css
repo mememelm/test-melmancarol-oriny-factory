@@ -1,0 +1,17 @@
+.card-melman {
+    margin-top: 150px;
+    margin-bottom: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-avatar {
+    background-image: url('../../../assets/images/costard.jpg');
+    background-size: cover;
+    padding: 14px;
+}
+
+.card-header :hover {
+    background-color: #f1f1f1;
+}

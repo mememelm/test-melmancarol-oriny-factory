@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="container card-melman animate__animated animate__backInDown">
+    <mat-card> 
+        <mat-card-header [routerLink]="['/information']" class="card-header">
+            <div mat-card-avatar class="img-avatar"></div>
+            <mat-card-title>{{personFullName | titlecase}}</mat-card-title>
+            <mat-card-subtitle>
+                {{personSpeciality | titlecase}} <br>
+                {{personExperiences}} - {{personState}}
+            </mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</div>
