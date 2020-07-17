@@ -1,0 +1,14 @@
+mat-grid-tile {
+    background: lightblue;
+}
+
+.cv-body {
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 50px;
+    position: relative;
+    /* width: 1000px;
+    max-width: 1000px; */
+    /* overflow: auto; */
+}
+  

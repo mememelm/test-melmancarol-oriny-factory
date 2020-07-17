@@ -1,0 +1,23 @@
+.btn-link-fb {
+    background-image: url('../../../../assets/images/logo-fb.jpg');
+    background-size: cover;
+    margin-top: 200px;
+    margin-left: 60px;
+    position: absolute;
+}
+
+.btn-link-tw {
+    background-image: url('../../../../assets/images/logo-tw.jpg');
+    background-size: cover;
+    margin-top: 120px;
+    margin-left: 60px;
+    position: absolute;
+}
+
+.btn-link-in {
+    background-image: url('../../../../assets/images/logo-lkd.jpg');
+    background-size: cover;
+    margin-top: 40px;
+    margin-left: 60px;
+    position: absolute;
+}

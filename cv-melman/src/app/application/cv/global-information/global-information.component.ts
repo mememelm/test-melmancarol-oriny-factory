@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GlobalInformationComponent implements OnInit {
 
+  cvTitle = 'Carol'
+
+  personFullName = 'rabearivony carol'
+  personSpeciality = 'développeur frontend'
+  personExperiences = '+3 ans d\'expériences'
+  personState = 'Disponible de suite'
+  
   constructor() { }
 
   ngOnInit(): void {

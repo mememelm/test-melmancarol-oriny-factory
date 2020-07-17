@@ -1,1 +1,22 @@
-<p>global-information works!</p>
+<mat-toolbar class="mat-elevation-z4">CV - {{cvTitle | uppercase}}</mat-toolbar>
+
+<app-btn-link></app-btn-link>
+
+<div class="cv-body container mat-elevation-z8">
+    <mat-grid-list cols="3" rowHeight="200px">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+            {{personFullName | titlecase}}
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            {{personSpeciality | titlecase}}
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            {{personSpeciality | titlecase}}
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            {{personSpeciality | titlecase}}
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+
