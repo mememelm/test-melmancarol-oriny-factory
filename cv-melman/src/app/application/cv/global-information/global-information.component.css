@@ -1,14 +1,34 @@
-mat-grid-tile {
-    background: lightblue;
+.cv-body-information {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 850px;
+    position: absolute;
 }
 
-.cv-body {
-    margin-top: 40px;
-    margin-left: 200px;
-    margin-right: 50px;
-    position: relative;
-    /* width: 1000px;
-    max-width: 1000px; */
-    /* overflow: auto; */
+.cv-body-link {
+    margin-top: 180px;
+    margin-left: 150px;
+    margin-right: 850px;
+    position: absolute;
 }
-  
+
+.cv-body-global {
+    margin-top: 40px;
+    margin-left: 520px;
+    margin-right: 50px;    
+    position: relative;
+}
+
+.img-avatar {
+    background-image: url('../../../../assets/images/normal.jpg');
+    background-size: cover;
+    padding: 14px;
+}
+
+.accord-head :hover {
+    color: #7FC5FF
+}
+
+.choice-color{
+    color: #7FC5FF;
+}
