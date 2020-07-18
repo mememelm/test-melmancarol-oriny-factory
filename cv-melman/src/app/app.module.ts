@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -55,6 +55,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { StrengthsComponent } from './application/cv/strengths/strengths.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import {MatTreeModule} from '@angular/material/tree';
     LanguageLevelComponent,
     SkillsComponent,
     BtnLinkComponent,
-    CivilStatusComponent
+    CivilStatusComponent,
+    StrengthsComponent
   ],
   imports: [
     BrowserModule,
@@ -122,6 +124,9 @@ import {MatTreeModule} from '@angular/material/tree';
     ScrollingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

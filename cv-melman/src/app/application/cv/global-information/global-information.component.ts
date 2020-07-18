@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-global-information',
   templateUrl: './global-information.component.html',
-  styleUrls: ['./global-information.component.css']
+  styleUrls: ['./global-information.component.css'],
 })
-export class GlobalInformationComponent implements OnInit {
-
+export class GlobalInformationComponent {
   cvTitle = 'Carol'
-  
-  ngOnInit(): void { }
-
 }

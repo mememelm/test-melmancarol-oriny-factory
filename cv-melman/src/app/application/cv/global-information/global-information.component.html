@@ -3,7 +3,7 @@
         #tooltip="matTooltip"
         matTooltip="Cliquez ici pour revenir à la page d'accueil"
         matTooltipHideDelay="5">
-        CV - {{cvTitle | uppercase}}
+        Curriculum vitae - {{cvTitle | uppercase}}
     </mat-label>
 </mat-toolbar>
 
@@ -12,9 +12,18 @@
 
 <div class="cv-body-global container animate__animated animate__fadeInBottomRight mat-elevation-z8">
     <mat-accordion>
+
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header class="accord-head">
-                <mat-panel-title>Formation</mat-panel-title>
+                <mat-panel-title>Mes atouts</mat-panel-title>
+                    <mat-icon class="choice-color">done_all</mat-icon>
+            </mat-expansion-panel-header>
+            <p><app-strengths></app-strengths></p>            
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header class="accord-head">
+                <mat-panel-title>Ma formation</mat-panel-title>
                     <mat-icon class="choice-color">school</mat-icon>
             </mat-expansion-panel-header>
             <p><app-education></app-education></p>            
@@ -22,7 +31,7 @@
 
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header class="accord-head">
-                <mat-panel-title>Parcours professionnel</mat-panel-title>
+                <mat-panel-title>Mon parcours professionnel</mat-panel-title>
                 <mat-icon class="choice-color">next_week</mat-icon>
             </mat-expansion-panel-header>
             <p><app-experiences></app-experiences></p>
@@ -30,7 +39,7 @@
 
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header class="accord-head">
-                <mat-panel-title>Compétences</mat-panel-title>
+                <mat-panel-title>Mes compétences niveau technique</mat-panel-title>
                 <mat-icon class="choice-color">laptop_chromebook</mat-icon>
             </mat-expansion-panel-header>
             <p><app-skills></app-skills></p>
@@ -38,7 +47,7 @@
 
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header class="accord-head">
-                <mat-panel-title>Niveau en développement</mat-panel-title>
+                <mat-panel-title>Mon niveau en développement</mat-panel-title>
                 <mat-icon class="choice-color">assessment</mat-icon>
             </mat-expansion-panel-header>
             <p><app-dev-level></app-dev-level></p>
@@ -46,7 +55,7 @@
 
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header class="accord-head">
-                <mat-panel-title>Compétences linguistiques</mat-panel-title>
+                <mat-panel-title>Mes compétences linguistiques</mat-panel-title>
                 <mat-icon class="choice-color">person_add</mat-icon>
             </mat-expansion-panel-header>
             <p><app-language-level></app-language-level></p>
