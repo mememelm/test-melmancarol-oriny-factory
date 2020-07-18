@@ -22,7 +22,6 @@ export class HobbiesComponent implements OnInit {
     this.dataSourceHobby.filter = filterValue.trim().toLowerCase();
   }
 
-
   ngOnInit(): void { }
 
 }

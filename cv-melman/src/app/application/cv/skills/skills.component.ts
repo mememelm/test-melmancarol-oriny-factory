@@ -3,12 +3,12 @@ import { Skill } from "../../../constant";
 import { MatTableDataSource } from '@angular/material/table';
 
 const skills: Skill[] = [
-  {skillCategory:'Suivie de projet :', skillName:'JIRA, Trello'},
-  {skillCategory:'Langage de programmation :', skillName:'Fullstack Python'},
-  {skillCategory:'Technologie web :', skillName:'Angular, ReactJS, Webpack, ExtJS/GeoExt'},
-  {skillCategory:'SIG :', skillName:'Gmaps API V3, Openlayer API'},
-  {skillCategory:'Intégration continue :', skillName:'SVN, git'},
-  {skillCategory:'SGBD :', skillName:'Oracle, MySQL, Postgresql / PostGiS, NoSQL'}
+  {skillCategory:'Suivie de projet', skillName:'JIRA, Trello'},
+  {skillCategory:'Langage de programmation', skillName:'Fullstack Python'},
+  {skillCategory:'Technologie web', skillName:'Angular, ReactJS, Webpack, ExtJS/GeoExt'},
+  {skillCategory:'SIG', skillName:'Gmaps API V3, Openlayer API'},
+  {skillCategory:'Intégration continue', skillName:'SVN, git'},
+  {skillCategory:'SGBD', skillName:'Oracle, MySQL, Postgresql/PostGiS, NoSQL'}
 ]
 
 @Component({
@@ -26,7 +26,6 @@ export class SkillsComponent implements OnInit {
     this.dataSourceSkill.filter = filterValue.trim().toLowerCase();
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

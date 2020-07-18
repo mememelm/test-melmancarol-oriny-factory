@@ -23,7 +23,6 @@ export class CivilStatusComponent implements OnInit {
   personAddress = 'ambohimiandra - antananarivo'
   personCountry = 'madagascar'
   
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
