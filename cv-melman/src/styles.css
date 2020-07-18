@@ -6,3 +6,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .choice-color{
     color: #7FC5FF;
 }
+
+.table-accordeon {
+    overflow: auto;
+}
+
+.label-filter {
+    text-align : right;
+    float: right;
+}

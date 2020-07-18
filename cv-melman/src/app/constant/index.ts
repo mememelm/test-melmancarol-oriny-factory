@@ -1,2 +1,5 @@
 export * from './class/education'
 export * from './class/person'
+export * from './class/experience'
+export * from './class/skill'
+export * from './class/hobby'

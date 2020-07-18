@@ -1,0 +1,19 @@
+.cv-body-information {
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 850px;
+    position: absolute;
+}
+
+.cv-body-link {
+    margin-top: 180px;
+    margin-left: 150px;
+    margin-right: 850px;
+    position: absolute;
+}
+
+.img-avatar {
+    background-image: url('../../../../assets/images/normal.jpg');
+    background-size: cover;
+    padding: 14px;
+}

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-btn-link',
@@ -12,13 +11,6 @@ export class BtnLinkComponent implements OnInit {
   // linkTwitter = 'https://twitter.com/MelMCarol'
   // linkLinkedin = 'https://www.linkedin.com/in/melman-carol'
 
-  constructor(private router: Router) { }
-
-  nagivateFacebook(){
-    this.router.navigateByUrl('web.facebook.com/lepetitmelman')
-  } 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void { }
 
 }

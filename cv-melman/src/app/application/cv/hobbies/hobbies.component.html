@@ -1,1 +1,13 @@
-<p>hobbies works!</p>
+<mat-form-field class='label-filter'> 
+    <mat-label>Rechercher</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. angular">
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSourceHobby">
+    <ng-container matColumnDef="hobbies">
+        <td mat-cell *matCellDef="let element"> 
+            - {{element.hobbyDescription}}
+        </td>
+    </ng-container>
+    <tr mat-row *matRowDef="let row; columns: columnDisplayedHobbies;"></tr>
+</table>

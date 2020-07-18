@@ -1,0 +1,28 @@
+<div class="cv-body-information container  animate__animated animate__fadeInDownBig mat-elevation-z8">
+    <ng-container>
+        <mat-card> 
+            <mat-card-header>
+                <mat-card-title>{{personLastName | uppercase}} {{personFirstName | titlecase}}</mat-card-title>
+                <mat-card-subtitle>                    
+                    {{personSkill | titlecase}} - {{personTechnology | titlecase}} <br>
+                    {{personAge}} ans | {{personStatus | titlecase}} - {{personChildren}} enfants
+                </mat-card-subtitle>
+                <div mat-card-avatar class="img-avatar"></div>
+            </mat-card-header>
+        </mat-card>
+    </ng-container> 
+</div>
+
+<div class="cv-body-link container animate__animated animate__fadeInBottomLeft mat-elevation-z8">
+    <ng-container>
+        <mat-card> 
+            <mat-card-content>
+                <p><mat-icon class="choice-color">phonelink_ring</mat-icon> {{personCellular}} </p>
+                <p><mat-icon class="choice-color">email</mat-icon> {{personEmail}} </p>
+                <p><mat-icon class="choice-color">label_important</mat-icon> {{personLinkedin}} </p>
+                <p><mat-icon class="choice-color">pin_drop</mat-icon> {{personAddress | titlecase}} </p>
+                <p><mat-icon class="choice-color">language</mat-icon> {{personCountry | titlecase}} </p>
+            </mat-card-content>
+        </mat-card>
+    </ng-container> 
+</div>

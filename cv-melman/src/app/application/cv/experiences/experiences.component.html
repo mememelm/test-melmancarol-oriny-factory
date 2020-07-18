@@ -1,1 +1,25 @@
-<p>experiences works!</p>
+<mat-form-field class='label-filter'> 
+    <mat-label>Rechercher</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. angular">
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSourceExperience">
+    <ng-container matColumnDef="experience">
+        <td mat-cell *matCellDef="let element" class="table-accordeon"> 
+            <p><br><strong>{{element.experienceTitle}}</strong></p> 
+            <p>
+                {{element.experienceDateStart | date: 'dd MMMM yyyy'}}  - {{element.experienceDateEnd | date: 'dd MMMM yyyy'}} <br>
+                {{element.experienceLocation}} | {{element.experienceTown}} - {{element.experienceCountry}}
+            </p>
+            <mat-label class="choice-color">Technologies :</mat-label> {{element.experienceTechnologyFrontEnd}} - {{element.experienceTechnologyBackendList}} <br>
+            <p>
+                {{element?.experienceMissionList1}} <br> 
+                {{element?.experienceMissionList2}} <br> 
+                {{element?.experienceMissionList3}} <br> 
+                {{element?.experienceMissionList4}} <br> 
+                {{element?.experienceMissionList5}}
+            </p> 
+        </td>
+    </ng-container>
+    <tr mat-row *matRowDef="let row; columns: columnDisplayedExperience;"></tr>
+</table>

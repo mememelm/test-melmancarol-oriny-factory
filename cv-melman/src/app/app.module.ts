@@ -7,7 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // import application
 import { HomeComponent, DevLevelComponent, EducationComponent, ExperiencesComponent, GlobalInformationComponent, 
-         HobbiesComponent, LanguageLevelComponent, SkillsComponent, BtnLinkComponent} from './application';
+         HobbiesComponent, LanguageLevelComponent, SkillsComponent, BtnLinkComponent, CivilStatusComponent} from './application';
+
+//  chart
+import { ChartsModule } from 'ng2-charts';
 
 // import material
 import {A11yModule} from '@angular/cdk/a11y';
@@ -65,12 +68,14 @@ import {MatTreeModule} from '@angular/material/tree';
     HobbiesComponent, 
     LanguageLevelComponent,
     SkillsComponent,
-    BtnLinkComponent
+    BtnLinkComponent,
+    CivilStatusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ChartsModule,
     // mat
     A11yModule,
     ClipboardModule,

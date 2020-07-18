@@ -1,4 +1,9 @@
-<table mat-table [dataSource]="dataSourceEducation" class="table-education">
+<mat-form-field class='label-filter'> 
+    <mat-label>Rechercher</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. angular">
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSourceEducation">
     <ng-container matColumnDef="education">
         <td mat-cell *matCellDef="let element"> 
             <strong>{{element.educationGrade}}</strong> <br>
